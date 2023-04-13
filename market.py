@@ -48,7 +48,6 @@ def perform_calculations():
         total_deductions += deduction_amount
         print('{} $ {:>10,.2f}'.format(deduction_name + ':', deduction_amount))
 
-    # net pay
     net_pay = gross_pay - total_deductions
 
 def display_results ():
