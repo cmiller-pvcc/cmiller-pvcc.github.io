@@ -4,7 +4,7 @@
 import datetime
 
 stu = []
-student_file = "students-2.csv"
+student_file = "students.csv"
 out_file = "stu_report.txt"
 
 def main():
@@ -28,7 +28,7 @@ def calculate_grades():
         hw = int(stu[i][2]) # Last name is pos. 0, first name is pos. 1, homework is pos. 2
         midex = int (stu[i][3])
         stu[i][4] = stu [i][4][:-1]
-        finex = int(stu[1][4])
+        finex = int(stu[i][4])
         sum_grades = hw + midex + finex
         finalgr = sum_grades / 3
         gradestotal += finalgr
